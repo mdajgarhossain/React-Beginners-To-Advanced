@@ -50,11 +50,25 @@ const Fruits = () => {
     )
 }
 
+const Vegetables = () => {
+    return (
+        <div>
+            <h2>Vegetables</h2>
+            <ul>
+                <li>Brussel Sprouts</li>
+                <li>Broccoli</li>
+                <li>Squash</li>
+            </ul>
+        </div>
+    )
+}
+
 const TypesOfFood = () => {
     return (
         <div>
             <h1>Types Of Food:</h1>
             <Fruits />
+            <Vegetables />
         </div>
     )
 }
