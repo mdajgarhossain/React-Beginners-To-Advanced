@@ -1,9 +1,11 @@
 import React from 'react';
 
 //Use React to Render Nested Components(freecodecamp)
-const TypesOfFruit = () => {
+//Compose React Components(freecodecamp)
+const NonCitrus = () => {
     return (
         <div>
+            <h3>Non-Citrus</h3>
             <ul>
                 <li>Mangoes</li>
                 <li>Apples</li>
@@ -15,10 +17,34 @@ const TypesOfFruit = () => {
     )
 }
 
+const Citrus = () => {
+    return (
+        <div>
+            <h3>Citrus</h3>
+            <ul>
+                <li>Lemon</li>
+                <li>Lime</li>
+                <li>Orange</li>
+                <li>Grapefruit</li>
+                
+            </ul>
+        </div>
+    )
+}
+
+const TypesOfFruit = () => {
+    return (
+        <div>
+            <NonCitrus />
+            <Citrus />
+        </div>
+    )
+}
+
 const Fruits = () => {
     return (
         <div>
-            <h1>Fruits:</h1>
+            <h2>Fruits:</h2>
             <TypesOfFruit />
         </div>
     )
