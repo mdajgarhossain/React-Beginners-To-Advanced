@@ -5,20 +5,23 @@ import NestedComponents from './MyComponents/NestedComponents';
 import CompoWithProps from './MyComponents/CompoWithProps';
 import Person from './MyComponents/DestructuringProps';
 import Navbar from './MyComponents/Navbar';
+import Calendar from './MyComponents/PropsInStatelessComponent';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       
-      <Parent />
+      {/* <Parent />
       <NestedComponents />
 
       <CompoWithProps name="Jewell" profession="Software Developer"/>
       <CompoWithProps name="Karim" profession="Businessman"/>
-      <CompoWithProps name="Rahim" profession="Traveler"/>
+      <CompoWithProps name="Rahim" profession="Traveler"/> */}
 
       <Person name='Ajgar' age={25} profession='Software Developer'/>
+
+      <Calendar />
     </div>
   );
 }
