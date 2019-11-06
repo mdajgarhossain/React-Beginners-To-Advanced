@@ -7,6 +7,7 @@ import Person from './MyComponents/DestructuringProps';
 import Navbar from './MyComponents/Navbar';
 import Calendar from './MyComponents/PropsInStatelessComponent';
 import ToDo from './MyComponents/PassArrayAsProps';
+import DefaultProps from './MyComponents/DefaultProps';
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
 
       <Calendar /> */}
 
-      <ToDo />
+      {/* <ToDo /> */}
+
+      <DefaultProps />
     </div>
   );
 }
