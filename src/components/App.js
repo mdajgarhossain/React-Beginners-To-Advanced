@@ -6,6 +6,7 @@ import CompoWithProps from './MyComponents/CompoWithProps';
 import Person from './MyComponents/DestructuringProps';
 import Navbar from './MyComponents/Navbar';
 import Calendar from './MyComponents/PropsInStatelessComponent';
+import ToDo from './MyComponents/PassArrayAsProps';
 
 function App() {
   return (
@@ -19,9 +20,11 @@ function App() {
       <CompoWithProps name="Karim" profession="Businessman"/>
       <CompoWithProps name="Rahim" profession="Traveler"/> */}
 
-      <Person name='Ajgar' age={25} profession='Software Developer'/>
+      {/* <Person name='Ajgar' age={25} profession='Software Developer'/>
 
-      <Calendar />
+      <Calendar /> */}
+
+      <ToDo />
     </div>
   );
 }
