@@ -8,6 +8,7 @@ import Navbar from './MyComponents/Navbar';
 import Calendar from './MyComponents/PropsInStatelessComponent';
 import ToDo from './MyComponents/PassArrayAsProps';
 import DefaultProps from './MyComponents/DefaultProps';
+import OverrideDefaultProps from './MyComponents/OverrideDefaultProps';
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
 
       {/* <ToDo /> */}
 
-      <DefaultProps />
+      {/* <DefaultProps /> */}
+
+      <OverrideDefaultProps />
     </div>
   );
 }
