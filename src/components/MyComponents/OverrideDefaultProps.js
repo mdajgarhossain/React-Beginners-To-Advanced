@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; //must be imported for PropTypes
 
 //Override Default Props(freecodecamp)
 const Items = ({quantity}) => {
@@ -8,6 +9,9 @@ const Items = ({quantity}) => {
         </div>
     )
 }
+
+//Use PropTypes to Define the Props You Expect
+Items.propTypes = {quantity: PropTypes.number.isRequired}
 
 Items.defaultProps = {quantity: 10}
 
