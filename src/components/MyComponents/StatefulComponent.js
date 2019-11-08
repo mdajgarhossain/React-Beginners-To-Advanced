@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+//Create a Stateful Component(freecodecomp)
 class StatefulComponent extends Component {
     constructor(props) {
         super(props);
