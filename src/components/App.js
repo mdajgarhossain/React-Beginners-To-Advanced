@@ -10,6 +10,8 @@ import ToDo from './MyComponents/PassArrayAsProps';
 import DefaultProps from './MyComponents/DefaultProps';
 import OverrideDefaultProps from './MyComponents/OverrideDefaultProps';
 import StatefulComponent from './MyComponents/StatefulComponent';
+import StateInBangla from './MyComponents/StateInBangla';
+import StateInBangla2 from './MyComponents/StateInBangla2';
 
 function App() {
   return (
@@ -17,11 +19,11 @@ function App() {
       <Navbar />
       
       {/* <Parent />
-      <NestedComponents />
+      <NestedComponents /> */}
 
       <CompoWithProps name="Jewell" profession="Software Developer"/>
       <CompoWithProps name="Karim" profession="Businessman"/>
-      <CompoWithProps name="Rahim" profession="Traveler"/> */}
+      <CompoWithProps name="Rahim" profession="Traveler"/>
 
       {/* <Person name='Ajgar' age={25} profession='Software Developer'/>
 
@@ -33,7 +35,11 @@ function App() {
 
       {/* <OverrideDefaultProps /> */}
 
-      <StatefulComponent />
+      {/* <StatefulComponent /> */}
+
+      <StateInBangla />
+
+      <StateInBangla2 />
     </div>
   );
 }

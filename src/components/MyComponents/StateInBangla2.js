@@ -4,6 +4,9 @@ import MyIntro from './CompoWithProps';
 //Twinkle cats
 class Developers extends Component {
 
+    /*state hocche component er nijossho data, state ke props hisebeo use kora jay, jokhon 
+    kno chage ante hoy just state change koredelei hobe. jokhon static data change hoy 
+    tokhon DOM automatically re render hoy*/
     state = {
         persons: [
             {name: 'Jewell', place: 'Frontend Developer'},
@@ -29,6 +32,7 @@ class Developers extends Component {
                 <MyIntro name={this.state.persons[1].name} profession={this.state.persons[1].place}/>
                 <MyIntro name={this.state.persons[2].name} profession={this.state.persons[2].place}/> */}
 
+                {/*2nd approach: relatively good practice */}
                 <span style={{color: this.state.color}}>
                 {this.state.persons.map((person, index) => {
                     return <MyIntro key={index} name={person.name} profession={person.place} />
