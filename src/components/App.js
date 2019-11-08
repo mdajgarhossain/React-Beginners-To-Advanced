@@ -13,6 +13,7 @@ import StatefulComponent from './MyComponents/StatefulComponent';
 import StateInBangla from './MyComponents/StateInBangla';
 import StateInBangla2 from './MyComponents/StateInBangla2';
 import MyStatefulComponent from './MyComponents/RenderStateInUI';
+import SetStateComponent from './MyComponents/SetStateComponent';
 
 function App() {
   return (
@@ -38,11 +39,13 @@ function App() {
 
       {/* <StatefulComponent /> */}
 
-      <StateInBangla />
+      {/* <StateInBangla /> */}
 
       <StateInBangla2 />
 
       <MyStatefulComponent />
+
+      <SetStateComponent />
     </div>
   );
 }
