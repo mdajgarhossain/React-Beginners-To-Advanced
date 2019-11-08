@@ -19,7 +19,7 @@ class MyStatefulComponent extends React.Component {
         return(
             <div>
                 <h1>Course Name: {this.state.courseName}</h1>
-                <h1>Course Duration: {this.state.courseDuration} days</h1>
+                <h1>Course Duration: {duration} days</h1>
             </div>
         )
     }

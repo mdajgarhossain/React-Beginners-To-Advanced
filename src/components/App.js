@@ -12,6 +12,7 @@ import OverrideDefaultProps from './MyComponents/OverrideDefaultProps';
 import StatefulComponent from './MyComponents/StatefulComponent';
 import StateInBangla from './MyComponents/StateInBangla';
 import StateInBangla2 from './MyComponents/StateInBangla2';
+import MyStatefulComponent from './MyComponents/RenderStateInUI';
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
       {/* <Parent />
       <NestedComponents /> */}
 
-      <CompoWithProps name="Jewell" profession="Software Developer"/>
+      {/* <CompoWithProps name="Jewell" profession="Software Developer"/>
       <CompoWithProps name="Karim" profession="Businessman"/>
-      <CompoWithProps name="Rahim" profession="Traveler"/>
+      <CompoWithProps name="Rahim" profession="Traveler"/> */}
 
       {/* <Person name='Ajgar' age={25} profession='Software Developer'/>
 
@@ -40,6 +41,8 @@ function App() {
       <StateInBangla />
 
       <StateInBangla2 />
+
+      <MyStatefulComponent />
     </div>
   );
 }
