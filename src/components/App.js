@@ -14,6 +14,7 @@ import StateInBangla from './MyComponents/StateInBangla';
 import StateInBangla2 from './MyComponents/StateInBangla2';
 import MyStatefulComponent from './MyComponents/RenderStateInUI';
 import SetStateComponent from './MyComponents/SetStateComponent';
+import EventHandlerInBangla from './MyComponents/EventHandlerInBangla';
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
       <MyStatefulComponent />
 
       <SetStateComponent />
+      
+      <EventHandlerInBangla />
     </div>
   );
 }
