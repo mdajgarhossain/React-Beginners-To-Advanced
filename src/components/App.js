@@ -16,6 +16,7 @@ import MyStatefulComponent from './MyComponents/RenderStateInUI';
 import SetStateComponent from './MyComponents/SetStateComponent';
 import EventHandlerInBangla from './MyComponents/EventHandlerInBangla';
 import ToggleElementInComponent from './MyComponents/ToggleElementInComponent';
+import SimpleCounter from './MyComponents/SimpleCounter';
 
 function App() {
   return (
@@ -52,6 +53,8 @@ function App() {
       <EventHandlerInBangla />
 
       <ToggleElementInComponent />
+
+      <SimpleCounter />
     </div>
   );
 }
