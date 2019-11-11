@@ -15,6 +15,7 @@ import StateInBangla2 from './MyComponents/StateInBangla2';
 import MyStatefulComponent from './MyComponents/RenderStateInUI';
 import SetStateComponent from './MyComponents/SetStateComponent';
 import EventHandlerInBangla from './MyComponents/EventHandlerInBangla';
+import ToggleElementInComponent from './MyComponents/ToggleElementInComponent';
 
 function App() {
   return (
@@ -42,13 +43,15 @@ function App() {
 
       {/* <StateInBangla /> */}
 
-      <StateInBangla2 />
+      {/* <StateInBangla2 />
 
-      <MyStatefulComponent />
+      <MyStatefulComponent /> */}
 
       <SetStateComponent />
       
       <EventHandlerInBangla />
+
+      <ToggleElementInComponent />
     </div>
   );
 }
