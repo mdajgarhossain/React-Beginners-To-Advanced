@@ -17,6 +17,7 @@ import SetStateComponent from './MyComponents/SetStateComponent';
 import EventHandlerInBangla from './MyComponents/EventHandlerInBangla';
 import ToggleElementInComponent from './MyComponents/ToggleElementInComponent';
 import SimpleCounter from './MyComponents/SimpleCounter';
+import ControlledInput from './MyComponents/ControlledInput';
 
 function App() {
   return (
@@ -55,6 +56,8 @@ function App() {
       <ToggleElementInComponent />
 
       <SimpleCounter />
+
+      <ControlledInput />
     </div>
   );
 }
