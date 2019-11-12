@@ -19,6 +19,7 @@ import ToggleElementInComponent from './MyComponents/ToggleElementInComponent';
 import SimpleCounter from './MyComponents/SimpleCounter';
 import ControlledInput from './MyComponents/ControlledInput';
 import MyForm from './MyComponents/ControlledForm';
+import StatelessComponent from './MyComponents/StatelessComponent';
 
 function App() {
   return (
@@ -61,6 +62,8 @@ function App() {
       <ControlledInput />
 
       <MyForm />
+
+      <StatelessComponent value="No" name="JeweLL"/>
     </div>
   );
 }
