@@ -22,6 +22,7 @@ import MyForm from './MyComponents/ControlledForm';
 import StatelessComponent from './MyComponents/StatelessComponent';
 import MyApp from './MyComponents/PassStateAsProps';
 import MyApplication from './MyComponents/PassCallbackasProps';
+import StyledComponent from './MyComponents/StylesWithCSS';
 
 function App() {
   return (
@@ -70,6 +71,8 @@ function App() {
       <MyApp />
 
       <MyApplication />
+
+      <StyledComponent />
     </div>
   );
 }
