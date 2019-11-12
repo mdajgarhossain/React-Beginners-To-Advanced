@@ -21,6 +21,7 @@ import ControlledInput from './MyComponents/ControlledInput';
 import MyForm from './MyComponents/ControlledForm';
 import StatelessComponent from './MyComponents/StatelessComponent';
 import MyApp from './MyComponents/PassStateAsProps';
+import MyApplication from './MyComponents/PassCallbackasProps';
 
 function App() {
   return (
@@ -52,7 +53,7 @@ function App() {
 
       <MyStatefulComponent /> */}
 
-      <SetStateComponent />
+      {/* <SetStateComponent />
       
       <EventHandlerInBangla />
 
@@ -64,9 +65,11 @@ function App() {
 
       <MyForm />
 
-      <StatelessComponent value="No" name="JeweLL"/>
+      <StatelessComponent value="No" name="JeweLL"/> */}
 
       <MyApp />
+
+      <MyApplication />
     </div>
   );
 }
