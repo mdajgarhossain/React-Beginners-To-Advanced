@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../App.css';
 
 //Pass a Callback as Props(freecodecamp)
 class MyApplication extends Component {
@@ -28,7 +29,7 @@ class MyApplication extends Component {
 
     render() {
         return(
-            <div>
+            <div className="MyApplication">
                 <h2>Pass a Callback as Props</h2>
                 <GetInput input={this.state.input} handleChange={this.handleChange}/>
                 <RenderInput input={this.state.input}/>
@@ -45,7 +46,7 @@ class GetInput extends Component {
 
     render() {
         return(
-            <div>
+            <div className="GetInput">
                 <h3>Get Input:</h3>
                 <input value={this.props.input} onChange={this.props.handleChange} />
             </div>
@@ -60,7 +61,7 @@ class RenderInput extends Component {
 
     render() {
         return(
-            <div>
+            <div className="RenderInput">
                 <h3>Input Render:</h3>
                 <p>{this.props.input}</p>
             </div>
@@ -75,7 +76,7 @@ class SubmitInput extends Component {
 
     render() {
         return(
-            <div>
+            <div className="SubmitInput">
                 <button onClick={this.props.handleSubmit}>Submit</button>
                 <p>{this.props.input}</p>
             </div>

@@ -1,0 +1,31 @@
+.StyledComponent {
+    width: 70%;
+    margin: 30px auto;
+    background: green;
+}
+
+.StyledComponent h1 {
+    text-align: center;
+    color: lightcoral;
+    padding: 20px;
+}
+
+.MyApplication {
+    width: 50%;
+    border: 2px solid sienna;
+    background: honeydew;
+}
+
+.GetInput input {
+    color: green;
+}
+
+.RenderInput p {
+    color: green;
+    font-size: 1.5em;
+}
+
+.SubmitInput p {
+    color: green;
+    font-size: 2em;
+}
