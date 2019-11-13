@@ -23,6 +23,7 @@ import StatelessComponent from './MyComponents/StatelessComponent';
 import MyApp from './MyComponents/PassStateAsProps';
 import MyApplication from './MyComponents/PassCallbackasProps';
 import StyledComponent from './MyComponents/StylesWithCSS';
+import BooksApp from './MyComponents/List/Books/BooksApp';
 
 function App() {
   return (
@@ -68,11 +69,13 @@ function App() {
 
       <StatelessComponent value="No" name="JeweLL"/> */}
 
-      <MyApp />
+      {/* <MyApp />
 
-      <MyApplication />
+      <MyApplication /> */}
 
       <StyledComponent />
+
+      <BooksApp />
     </div>
   );
 }
