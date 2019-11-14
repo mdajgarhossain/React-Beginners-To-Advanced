@@ -76,9 +76,9 @@ function App() {
 
       {/* <StyledComponent /> */}
 
-      <BooksApp />
+      {/* <BooksApp /> */}
 
-      {/* <LifecycleComponent /> */}
+      <LifecycleComponent />
     </div>
   );
 }
