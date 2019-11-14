@@ -17,6 +17,10 @@ class Book extends Component {
         }
     }
 
+    componentWillUnmount() {
+        console.log('Book componentWillUnmount');
+    }
+
     editHandler = () => {
         this.setState({
             isEditable: true

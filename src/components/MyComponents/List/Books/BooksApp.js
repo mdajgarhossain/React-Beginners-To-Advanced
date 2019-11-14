@@ -4,30 +4,46 @@ import Books from './Books';
 //Twinkle cats : Working with List is React 
 class BooksApp extends Component {
 
-    state = {
-        books: [
-            {
-                name: 'JavaScript',
-                price: 20,
-                id: 1
-            },
-            {
-                name: 'ReactJS',
-                price: 23,
-                id: 2
-            },
-            {
-                name: 'Redux',
-                price: 15,
-                id: 3
-            },
-            {
-                name: 'NodeJS',
-                price: 30,
-                id: 4
-            }
-        ]
-    };
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            books: [
+                {
+                    name: 'JavaScript',
+                    price: 20,
+                    id: 1
+                },
+                {
+                    name: 'ReactJS',
+                    price: 23,
+                    id: 2
+                },
+                {
+                    name: 'Redux',
+                    price: 15,
+                    id: 3
+                },
+                {
+                    name: 'NodeJS',
+                    price: 30,
+                    id: 4
+                }
+            ]
+        };
+
+        console.log('BooksApp Constructor');
+    }
+
+    componentDidMount() {
+        console.log('BooksApp componentDidMount');
+    
+    }
+
+    componentDidUpdate() {
+        console.log('BooksApp componentDidUpdate');
+    }
+    
 
     inputHandler = (name, id) => {
         let newBooks = this.state.books.map((book) => {
@@ -56,6 +72,8 @@ class BooksApp extends Component {
     }
 
     render() {
+        console.log('BooksApp Render');
+
         return(
             <div>
                 <h4>Books List and Price</h4>
@@ -66,3 +84,14 @@ class BooksApp extends Component {
 }
 
 export default BooksApp
+
+/*Summary:
+constructor()
+render()
+Call all child lifecycle methods
+componentDidMount()
+or
+componentWillUnmount()
+or
+componentDidUpdate()
+*/

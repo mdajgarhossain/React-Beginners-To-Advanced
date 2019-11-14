@@ -24,6 +24,7 @@ import MyApp from './MyComponents/PassStateAsProps';
 import MyApplication from './MyComponents/PassCallbackasProps';
 import StyledComponent from './MyComponents/StylesWithCSS';
 import BooksApp from './MyComponents/List/Books/BooksApp';
+import LifecycleComponent from './MyComponents/LifecycleMethods';
 
 function App() {
   return (
@@ -73,9 +74,11 @@ function App() {
 
       <MyApplication /> */}
 
-      <StyledComponent />
+      {/* <StyledComponent /> */}
 
       <BooksApp />
+
+      {/* <LifecycleComponent /> */}
     </div>
   );
 }
