@@ -9,7 +9,7 @@ class Books extends Component {
             <div>
                 {this.props.books.map(book => {
                     return(
-                        <Book book={book} deleteHandler={this.props.deleteHandler}/>
+                        <Book book={book} inputHandler={this.props.inputHandler} deleteHandler={this.props.deleteHandler}/>
                     )
                 })}
             </div>

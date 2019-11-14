@@ -29,6 +29,23 @@ class BooksApp extends Component {
         ]
     };
 
+    inputHandler = (name, id) => {
+        let newBooks = this.state.books.map((book) => {
+            if(id === book.id) {
+                return {
+                    ...book,
+                    name
+                }
+            }
+
+            return book;
+        });
+
+        this.setState({
+            books: newBooks
+        });
+    }
+
     deleteHandler = (id) => {
         let newBooks = this.state.books.filter((book) => {
             return book.id !== id;
@@ -42,7 +59,7 @@ class BooksApp extends Component {
         return(
             <div>
                 <h4>Books List and Price</h4>
-                <Books books={this.state.books} deleteHandler={this.deleteHandler}/>
+                <Books books={this.state.books} inputHandler={this.inputHandler} deleteHandler={this.deleteHandler}/>
             </div>
         )
     }
