@@ -9,6 +9,7 @@ class FetchData extends Component {
     };
 
     componentDidMount() {
+        //API call
         axios.get('https://jsonplaceholder.typicode.com/posts')
                 .then((response) => {
                     this.setState({
@@ -17,6 +18,11 @@ class FetchData extends Component {
                 })
                 .catch((error) => console.log(error))
     }
+
+    componentDidUpdate() {
+        console.log('Updated after API call!');
+        
+    }   
 
     render() {
         // console.log(this.state);
