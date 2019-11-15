@@ -25,6 +25,7 @@ import MyApplication from './MyComponents/PassCallbackasProps';
 import StyledComponent from './MyComponents/StylesWithCSS';
 import BooksApp from './MyComponents/List/Books/BooksApp';
 import LifecycleComponent from './MyComponents/LifecycleMethods';
+import FetchData  from './MyComponents/FetchWithAxios';
 
 function App() {
   return (
@@ -78,7 +79,9 @@ function App() {
 
       {/* <BooksApp /> */}
 
-      <LifecycleComponent />
+      {/* <LifecycleComponent /> */}
+
+      <FetchData />
     </div>
   );
 }
