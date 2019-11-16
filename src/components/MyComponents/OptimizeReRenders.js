@@ -1,6 +1,27 @@
 import React, {Component} from 'react';
 
 //Optimize Re-Renders with shouldComponentUpdate(freecodecamp)
+class OnlyEvens extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('Should I Update?');
+        
+        if(nextProps.value % 2 === 0) {
+            return true;
+        }   
+    }
+
+    componentDidUpdate() {
+        console.log('Component re-rendered!');
+    }
+
+    render() {
+        return <h1>{this.props.value}</h1>
+    }
+}
 class Controller extends Component {
     constructor(props) {
         super(props);
@@ -10,12 +31,6 @@ class Controller extends Component {
         };
 
         this.addValue = this.addValue.bind(this);
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-        if(nextState.value % 2 === 0) {
-            return true;
-        }   
     }
 
     addValue() {
@@ -28,7 +43,7 @@ class Controller extends Component {
         return(
             <div>
                 <button onClick={this.addValue}>Add</button>
-                <h1>{this.state.value}</h1>
+                <OnlyEvens value={this.state.value}/>
             </div>
         )
     }
