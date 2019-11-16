@@ -27,6 +27,7 @@ import BooksApp from './MyComponents/List/Books/BooksApp';
 import LifecycleComponent from './MyComponents/LifecycleMethods';
 import FetchData  from './MyComponents/FetchWithAxios';
 import MockAPI from './MyComponents/MockAPICall';
+import EventListener from './MyComponents/AddEventListeners';
 
 function App() {
   return (
@@ -85,6 +86,8 @@ function App() {
       {/* <FetchData /> */}
 
       <MockAPI />
+
+      <EventListener />
     </div>
   );
 }
