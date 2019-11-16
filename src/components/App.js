@@ -26,6 +26,7 @@ import StyledComponent from './MyComponents/StylesWithCSS';
 import BooksApp from './MyComponents/List/Books/BooksApp';
 import LifecycleComponent from './MyComponents/LifecycleMethods';
 import FetchData  from './MyComponents/FetchWithAxios';
+import MockAPI from './MyComponents/MockAPICall';
 
 function App() {
   return (
@@ -79,9 +80,11 @@ function App() {
 
       {/* <BooksApp /> */}
 
-      {/* <LifecycleComponent /> */}
+      <LifecycleComponent />
 
-      <FetchData />
+      {/* <FetchData /> */}
+
+      <MockAPI />
     </div>
   );
 }
