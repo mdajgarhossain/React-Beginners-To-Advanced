@@ -28,6 +28,7 @@ import LifecycleComponent from './MyComponents/LifecycleMethods';
 import FetchData  from './MyComponents/FetchWithAxios';
 import MockAPI from './MyComponents/MockAPICall';
 import EventListener from './MyComponents/AddEventListeners';
+import Controller from './MyComponents/OptimizeReRenders';
 
 function App() {
   return (
@@ -88,6 +89,8 @@ function App() {
       <MockAPI />
 
       <EventListener />
+
+      <Controller />
     </div>
   );
 }
