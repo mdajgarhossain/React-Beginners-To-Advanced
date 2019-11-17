@@ -31,6 +31,7 @@ import EventListener from './MyComponents/AddEventListeners';
 import Controller from './MyComponents/OptimizeReRenders';
 import Colorful from './MyComponents/InlineStyles';
 import Colored from './MyComponents/AddInlineStyles';
+import MagicEightBall from './MyComponents/AdvancedJavaScriptInRender';
 
 function App() {
   return (
@@ -97,6 +98,8 @@ function App() {
       <Colorful />
 
       <Colored />
+
+      <MagicEightBall />
     </div>
   );
 }
