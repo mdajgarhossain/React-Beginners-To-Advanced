@@ -30,6 +30,7 @@ import MockAPI from './MyComponents/MockAPICall';
 import EventListener from './MyComponents/AddEventListeners';
 import Controller from './MyComponents/OptimizeReRenders';
 import Colorful from './MyComponents/InlineStyles';
+import Colored from './MyComponents/AddInlineStyles';
 
 function App() {
   return (
@@ -83,7 +84,7 @@ function App() {
 
       {/* <BooksApp /> */}
 
-      <LifecycleComponent />
+      {/* <LifecycleComponent /> */}
 
       {/* <FetchData /> */}
 
@@ -94,6 +95,8 @@ function App() {
       <Controller />
 
       <Colorful />
+
+      <Colored />
     </div>
   );
 }
