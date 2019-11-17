@@ -29,6 +29,7 @@ import FetchData  from './MyComponents/FetchWithAxios';
 import MockAPI from './MyComponents/MockAPICall';
 import EventListener from './MyComponents/AddEventListeners';
 import Controller from './MyComponents/OptimizeReRenders';
+import Colorful from './MyComponents/InlineStyles';
 
 function App() {
   return (
@@ -91,6 +92,8 @@ function App() {
       <EventListener />
 
       <Controller />
+
+      <Colorful />
     </div>
   );
 }
