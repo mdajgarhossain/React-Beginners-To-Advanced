@@ -13,20 +13,13 @@ class ConditionalComponent extends React.Component {
         });
     }
     render() {
-        if(this.state.display === true) {
             return(
                 <div>
                     <button onClick={this.toggleDisplay}>Toggle Display</button>
-                    <h1>Displayed!!!</h1>
+                    {/* Use && for a More Concise Conditional */}
+                    {this.state.display && <h1>Displayed!!!</h1>} 
                 </div>
             );
-        } else {
-            return(
-                <div>
-                    <button onClick={this.toggleDisplay}>Toggle Display</button>
-                </div>
-            );
-        }
     }
 }
 
