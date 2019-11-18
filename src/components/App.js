@@ -32,6 +32,7 @@ import Controller from './MyComponents/OptimizeReRenders';
 import Colorful from './MyComponents/InlineStyles';
 import Colored from './MyComponents/AddInlineStyles';
 import MagicEightBall from './MyComponents/AdvancedJavaScriptInRender';
+import ConditionalComponent from './MyComponents/RenderWithIfElse';
 
 function App() {
   return (
@@ -100,6 +101,8 @@ function App() {
       <Colored />
 
       <MagicEightBall />
+      
+      <ConditionalComponent />
     </div>
   );
 }
